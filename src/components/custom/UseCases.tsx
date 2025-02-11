@@ -1,11 +1,11 @@
 import { Card } from "@/components/ui/card";
-import { Building2, GraduationCap, Trophy, Video, Users2 } from "lucide-react";
+import { Building2, GraduationCap, Trophy, Video, Users2, Network} from "lucide-react";
 
 const cases = [
   {
     icon: Building2,
     title: "Gaming Companies",
-    description: "Scale your Minecraft operations with enterprise-grade infrastructure. Perfect for gaming studios and publishers.",
+    description: "Scale your operations with reliable infrastructure. Perfect for gaming studios and publishers.",
     benefits: [
       "High-performance dedicated servers",
       "Custom plugin support",
@@ -15,7 +15,7 @@ const cases = [
   {
     icon: GraduationCap,
     title: "Educational Institutions",
-    description: "Create secure, managed environments for educational Minecraft programs and student activities.",
+    description: "Create secure, managed environments for educational programs and student activities.",
     benefits: [
       "Controlled access management",
       "Education edition support",
@@ -25,7 +25,7 @@ const cases = [
   {
     icon: Trophy,
     title: "Event Organizations",
-    description: "Host large-scale Minecraft tournaments and events with confidence and reliability.",
+    description: "Host large-scale E-Sports tournaments and events with confidence and reliability.",
     benefits: [
       "High-capacity servers",
       "Real-time monitoring",
@@ -45,11 +45,21 @@ const cases = [
   {
     icon: Users2,
     title: "Gaming Communities",
-    description: "Build and grow your Minecraft community with scalable, professional hosting.",
+    description: "Build and grow your community with scalable, professional hosting.",
     benefits: [
       "Flexible scaling options",
       "Community management tools",
       "Advanced moderation features"
+    ]
+  },
+  {
+    icon: Network,
+    title: "Enterprise Solutions",
+    description: "Secure and reliable infrastructure for business applications and services.",
+    benefits: [
+      "99.9% Uptime guarantee",
+      "Enterprise-grade security",
+      "24/7 Technical support"
     ]
   }
 ];
@@ -60,12 +70,9 @@ export function UseCases() {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="heading-decoration">Trusted By</span> Businesses
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Powering successful Minecraft operations across various industries
-          </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            What Can You Do?
+            </h2>
         </div>
 
         {/* Use Cases Grid */}

@@ -1,46 +1,67 @@
 import { Card } from "@/components/ui/card";
-import { DollarSign, ShieldCheck, BarChart3, Gauge, LineChart, Lock, Clock, Activity } from "lucide-react";
+import { Code2, Wrench, BarChart3, Users, Puzzle, Workflow, GitBranch, HeartHandshake, Code, Bot, RocketIcon, MessageSquareCode } from "lucide-react";
 
 const benefits = [
   {
-    title: "Cost Efficiency",
-    icon: DollarSign,
+    title: "Custom Development",
+    icon: Code2,
     benefits: [
       {
-        title: "Predictable Billing",
-        description: "Fixed monthly costs with no hidden charges",
-        icon: Clock
+        title: "Tailored Solutions",
+        description: "Custom software built specifically for your business needs",
+        icon: Wrench
       },
       {
-        title: "Resource Optimization",
-        description: "Pay only for the resources you need",
-        icon: Gauge
+        title: "Full-Stack Expertise",
+        description: "End-to-end development from frontend to backend",
+        icon: Code
       },
       {
-        title: "Volume Pricing",
-        description: "Competitive rates for larger deployments",
+        title: "AI Integration",
+        description: "Smart automation and AI-powered features",
+        icon: Bot
+      }
+    ]
+  },
+  {
+    title: "Enterprise Solutions",
+    icon: Puzzle,
+    benefits: [
+      {
+        title: "System Integration",
+        description: "Seamless connection with your existing infrastructure",
+        icon: Workflow
+      },
+      {
+        title: "Scalable Architecture",
+        description: "Future-proof solutions that grow with your business",
+        icon: GitBranch
+      },
+      {
+        title: "Performance Optimization",
+        description: "High-performance systems built for enterprise scale",
         icon: BarChart3
       }
     ]
   },
   {
-    title: "Risk Management",
-    icon: ShieldCheck,
+    title: "Development Services",
+    icon: MessageSquareCode,
     benefits: [
       {
-        title: "Proactive Monitoring",
-        description: "24/7 system and performance monitoring",
-        icon: Activity
+        title: "Dedicated Team",
+        description: "Expert developers committed to your project",
+        icon: Users
       },
       {
-        title: "Security Compliance",
-        description: "Regular security audits and updates",
-        icon: Lock
+        title: "Agile Development",
+        description: "Rapid delivery with iterative improvements",
+        icon: RocketIcon
       },
       {
-        title: "Performance Reports",
-        description: "Detailed monthly performance analytics",
-        icon: LineChart
+        title: "Ongoing Support",
+        description: "Long-term partnership and maintenance",
+        icon: HeartHandshake
       }
     ]
   }
@@ -53,15 +74,17 @@ export function EnterpriseBenefits() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="heading-decoration">Enterprise</span> Benefits
+            <span className="heading-decoration">Sear Development</span> Solutions
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Maximize value and minimize risk with our enterprise solutions
+          <p className="text-muted-foreground max-w-3xl mx-auto">
+            Our development agency specializes in building custom enterprise solutions 
+            that transform your business vision into reality. From concept to deployment, 
+            we&apos;re your technical partner.
           </p>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((category, index) => (
             <Card 
               key={index}
@@ -100,7 +123,7 @@ export function EnterpriseBenefits() {
         {/* Additional Info */}
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            All enterprise plans include our standard 99.9% uptime guarantee and priority support
+            Partner with Sear Development for enterprise-grade custom solutions backed by our expertise
           </p>
         </div>
       </div>
