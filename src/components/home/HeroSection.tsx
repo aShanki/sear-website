@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { MessageSquareMore } from "lucide-react";
-import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -15,28 +14,23 @@ export function HeroSection() {
       <div className="container-custom relative">
         <div className="flex flex-col items-center text-center py-20 md:py-32 space-y-8">
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="text-primary heading-decoration">
-              Simple, Fast
+              Affordability meets
             </span>{" "}
-            Minecraft{" "}
-            <span className="text-accent heading-decoration">
-              Hosting
-            </span>
-          </h1>
+            <span className="text-primary heading-decoration">performance</span>
+            </h1>
 
-          {/* Description */}
+            {/* Description */}
           <p className="text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto">
             Host your Minecraft server with us. No fuss, just reliable hosting at a fair price.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Link href="/plans">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-foreground">
-                Get Started
-              </Button>
-            </Link>
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-foreground">
+              Get Started
+            </Button>
             <Button size="lg" variant="outline" className="gap-2">
               <MessageSquareMore className="h-5 w-5" />
               Join Discord
