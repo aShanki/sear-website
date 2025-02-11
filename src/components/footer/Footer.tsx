@@ -5,7 +5,7 @@ import { Github, Twitter, MessageSquareMore } from 'lucide-react';
 const footerLinks = {
   product: [
     { href: '/plans', label: 'Plans' },
-    { href: '/bespoke', label: 'Custom Orders' },
+    { href: 'custom-orders', label: 'Custom Orders' },
     { href: '/support', label: 'Support' },
   ],
   company: [
